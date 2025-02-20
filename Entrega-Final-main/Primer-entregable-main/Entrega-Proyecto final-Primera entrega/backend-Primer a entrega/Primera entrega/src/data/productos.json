@@ -1,0 +1,127 @@
+[
+  {
+    "id": 2,
+    "title": "Tips Limpiavidrios",
+    "description": "santamaria",
+    "price": 2,
+    "thumbnail": "https://www.supermercadosantamaria.com/documents/10180/10504/84248_G.jpg",
+    "status": true,
+    "category": "Limpieza",
+    "code": "def456",
+    "stock": 30
+  },
+  {
+    "id": 3,
+    "title": "Ambientador",
+    "description": "santamaria",
+    "price": 2,
+    "thumbnail": "https://www.supermercadosantamaria.com/documents/10180/10504/177404844_G.jpg",
+    "status": true,
+    "category": "Limpieza",
+    "code": "ghi789",
+    "stock": 20
+  },
+  {
+    "id": 6,
+    "title": "Achiote",
+    "description": "Lafavorita",
+    "thumbnail": "https://www.supermercadosantamaria.com/documents/10180/10504/27205_G.jpg",
+    "status": true,
+    "category": "alimentos",
+    "price": 1,
+    "code": "pqr678",
+    "stock": 22
+  },
+  {
+    "id": 7,
+    "title": "Queso",
+    "description": "Chonta",
+    "thumbnail": "https://www.supermercadosantamaria.com/documents/10180/10504/151052959_G.jpg",
+    "status": true,
+    "category": "Làcteos",
+    "price": 4,
+    "code": "stu901",
+    "stock": 35
+  },
+  {
+    "id": 8,
+    "title": "Leche",
+    "description": "Vita",
+    "thumbnail": "https://www.supermercadosantamaria.com/documents/10180/10504/150452942_G.jpg",
+    "status": true,
+    "category": "Làcteos",
+    "price": 1,
+    "code": "vwx234",
+    "stock": 18
+  },
+  {
+    "id": 9,
+    "title": "PAPAS",
+    "description": "ruffles",
+    "thumbnail": "https://www.supermercadosantamaria.com/documents/10180/10504/150452942_G.jpg",
+    "status": true,
+    "category": "Snack",
+    "price": 3,
+    "code": "yz1234",
+    "stock": 28
+  },
+  {
+    "id": 11,
+    "title": "Mani",
+    "description": "Granuts",
+    "thumbnail": "https://www.supermercadosantamaria.com/documents/10180/10504/75240_G.jpg",
+    "status": true,
+    "category": "Snack",
+    "price": 1,
+    "code": "aaa558",
+    "stock": 300
+  },
+  {
+    "id": 12,
+    "title": "Aceite",
+    "description": "santamaria",
+    "price": 5,
+    "img": "Sin imagen",
+    "code": "sds",
+    "stock": 2,
+    "category": "Galleta",
+    "status": false,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFphAkDFOVnZ8XVrRdRSI06CimvzpTZED2Q&s"
+  },
+  {
+    "id": 13,
+    "title": "Aceite",
+    "description": "santamartra",
+    "price": 5,
+    "img": "Sin imagen",
+    "code": "234",
+    "stock": 2,
+    "category": "Galleta",
+    "status": false,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFphAkDFOVnZ8XVrRdRSI06CimvzpTZED2Q&s"
+  },
+  {
+    "id": 14,
+    "title": "Aceite",
+    "description": "Pacha",
+    "price": 5,
+    "img": "Sin imagen",
+    "code": "526",
+    "stock": 2,
+    "category": "Galleta",
+    "status": false,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFphAkDFOVnZ8XVrRdRSI06CimvzpTZED2Q&s"
+  },
+  {
+    "id": 15,
+    "title": "Papel",
+    "description": "Pacha",
+    "price": 5,
+    "img": "Sin imagen",
+    "code": "324",
+    "stock": 2,
+    "category": "Galleta",
+    "status": false,
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFphAkDFOVnZ8XVrRdRSI06CimvzpTZED2Q&s"
+  }
+]

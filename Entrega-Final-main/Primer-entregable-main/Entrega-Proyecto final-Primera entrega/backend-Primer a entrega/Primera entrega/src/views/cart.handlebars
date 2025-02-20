@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Carrito</title>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+
+    {{#if cart.products.length}}
+        <div id="productos">
+            {{#each cart.products}}
+                <div class="producto">
+                    <h2>{{this.product.title}}</h2>
+                    <p>Cantidad: {{this.quantity}}</p>
+                    <p>Precio: ${{this.product.price}}</p>
+
+                    <!-- Formulario para actualizar cantidad -->
+                    <form action="/carts/{{../cart._id}}/product/{{this.product._id}}/update" method="POST">
+                        <label for="quantity">Cantidad:</label>
+                        <input type="number" name="quantity" value="{{this.quantity}}" min="1" required>
+                        <button type="submit">Actualizar cantidad</button>
+                    </form>
+
+                    <!-- Formulario para eliminar el producto (con method override) -->
+                    <form action="/carts/{{../cart._id}}/product/{{this.product._id}}" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit">Eliminar producto</button>
+                    </form>
+                </div>
+            {{/each}}
+        </div>
+
+        <!-- Mostrar el total del carrito -->
+        <h3>Total: ${{cart.totalPrice}}</h3>
+
+        <!-- Botón para proceder al pago o al checkout -->
+        <a href="/checkout/{{cart._id}}">Proceder al pago</a>
+
+    {{else}}
+        <p>Tu carrito está vacío.</p>
+    {{/if}}
+
+    <a href="/products?page=1&limit=10">Volver a la lista de productos</a>
+</body>
+</html>

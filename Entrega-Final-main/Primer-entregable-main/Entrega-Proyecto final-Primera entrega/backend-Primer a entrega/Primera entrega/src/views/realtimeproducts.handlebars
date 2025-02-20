@@ -1,0 +1,42 @@
+<h2> Real Time Products </h2>
+<h2> Productos actualizados---tiempo real </h2>
+
+<div id="contenedorProductos">
+  {{#each productos}}  <!-- Aquí recorremos la lista de productos -->
+    <div class="producto">
+        <h3>{{this.title}}</h3>
+        <p>{{this.description}}</p>
+        <p>Precio: ${{this.price}}</p>
+        <p>Stock: {{this.stock}}</p>
+        <p>Categoría: {{this.category}}</p>
+
+        <!-- Formulario para agregar al carrito -->
+        <form action="/carts/{{cid}}/product/{{this._id}}" method="POST">
+            <button type="submit">Agregar al carrito</button>
+        </form>
+    </div>
+  {{/each}}
+</div>
+
+<h2> Formulario para agregar productos </h2>
+
+<form>
+    <input type="text" id="title" placeholder="Titulo" required>
+    <input type="text" id="description" placeholder="Descripción" required>
+    <input type="number" id="price" placeholder="Precio" required>
+    <input type="text" id="img" placeholder="Imagen" value="Sin imagen">
+    <input type="text" id="code" placeholder="Código" required>
+    <input type="number" id="stock" placeholder="Stock" required>
+    <input type="text" id="category" placeholder="Categoría" required>
+    <input type="text" id="thumbnail" placeholder="Thumbnail (URL de imagen)" required>
+    
+    <select id="status" required>
+        <option value="true">Activo</option>
+        <option value="false">Inactivo</option>
+    </select>
+    
+    <button type="button" id="btnEnviar">Enviar</button>
+</form>
+
+<script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+<script src="js/index.js"></script>

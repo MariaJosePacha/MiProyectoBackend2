@@ -1,0 +1,48 @@
+h1 {
+    color: #e74c3c; /* Rojo */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.contenedorCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Espaciado entre tarjetas */
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Valor añadido para redondear las esquinas */
+    margin: 10px;
+    padding: 10px;
+    min-width: 200px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto de tarjeta */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
